@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Run - Animation Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>">
+</head>
+<body>
+  <div id="game-container">
+    <!-- Sky & Background -->
+    <div id="sky">
+      <div id="sun"></div>
+      <div id="moon"></div>
+      <div id="clouds">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+      </div>
+      <div id="stars"></div>
+    </div>
+
+    <!-- Parallax Layers -->
+    <div id="mountains"></div>
+    <div id="trees">
+      <div class="tree tree-1"></div>
+      <div class="tree tree-2"></div>
+      <div class="tree tree-3"></div>
+      <div class="tree tree-4"></div>
+      <div class="tree tree-5"></div>
+      <div class="tree tree-6"></div>
+      <div class="tree tree-7"></div>
+      <div class="tree tree-8"></div>
+    </div>
+
+    <!-- Ground -->
+    <div id="ground">
+      <div id="grass"></div>
+    </div>
+
+    <!-- Cat Character -->
+    <div id="cat" class="running">
+      <div class="cat-body">
+        <div class="cat-head">
+          <div class="ear ear-left"></div>
+          <div class="ear ear-right"></div>
+          <div class="face">
+            <div class="eye eye-left"><div class="pupil"></div></div>
+            <div class="eye eye-right"><div class="pupil"></div></div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+            <div class="whisker whisker-left-1"></div>
+            <div class="whisker whisker-left-2"></div>
+            <div class="whisker whisker-right-1"></div>
+            <div class="whisker whisker-right-2"></div>
+          </div>
+        </div>
+        <div class="torso"></div>
+        <div class="tail"></div>
+        <div class="leg leg-front-left"><div class="paw"></div></div>
+        <div class="leg leg-front-right"><div class="paw"></div></div>
+        <div class="leg leg-back-left"><div class="paw"></div></div>
+        <div class="leg leg-back-right"><div class="paw"></div></div>
+      </div>
+    </div>
+
+    <!-- Obstacles -->
+    <div id="obstacles"></div>
+
+    <!-- Particles -->
+    <div id="particles"></div>
+
+    <!-- UI Overlay -->
+    <div id="ui-overlay">
+      <div id="score-board">
+        <span id="score-label">Score</span>
+        <span id="score-value">0</span>
+      </div>
+      <div id="speed-indicator">
+        <span>Speed</span>
+        <div id="speed-bar"><div id="speed-fill"></div></div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div id="controls">
+      <button id="btn-jump" title="Jump (Space)">⬆️ Jump</button>
+      <button id="btn-speed" title="Speed Boost (Shift)">⚡ Boost</button>
+      <button id="btn-theme" title="Toggle Day/Night">🌙 Night</button>
+    </div>
+
+    <!-- Title -->
+    <div id="title-banner">
+      <h1>🐱 Cat Run!</h1>
+      <p>Press <kbd>Space</kbd> to jump · <kbd>Shift</kbd> for speed boost</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "catrun-project",
+  "version": "1.0.0",
+  "description": "Cat Run - An animated website featuring a running cat with parallax backgrounds, day/night cycle, and interactive controls.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["cat", "animation", "css", "javascript", "game"],
+  "author": "",
+  "license": "MIT"
+}
